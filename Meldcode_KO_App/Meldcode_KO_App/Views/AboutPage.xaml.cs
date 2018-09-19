@@ -12,5 +12,10 @@ namespace Meldcode_KO_App.Views
         {
             InitializeComponent();
         }
-    }
+
+		private void goToWebViewPageHandler(object sender, EventArgs e)
+		{
+			App.Current.MainPage = new WebViewPage();
+		}
+	}
 }

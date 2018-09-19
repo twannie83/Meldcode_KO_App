@@ -27,12 +27,15 @@ namespace Meldcode_KO_App.Views
                 switch (id)
                 {
                     case (int)MenuItemType.Browse:
-                        MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+                        MenuPages.Add(id, new NavigationPage(new MenuPage()));
                         break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
-                }
+					case (int)MenuItemType.Item:
+						MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+						break;
+				}
             }
 
             var newPage = MenuPages[id];

@@ -17,7 +17,7 @@ namespace Meldcode_KO_App.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Stappenplannen";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

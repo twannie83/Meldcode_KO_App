@@ -5,7 +5,7 @@
             x:Class="Meldcode_KO_App.Views.MainPage">
 
     <MasterDetailPage.Master>
-        <views:MenuPage />
+        <views:ItemsPage />
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
@@ -16,7 +16,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:ItemsPage />
+                <views:AboutPage/>
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>
