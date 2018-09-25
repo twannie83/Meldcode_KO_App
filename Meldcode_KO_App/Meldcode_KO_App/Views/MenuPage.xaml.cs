@@ -18,7 +18,8 @@ namespace Meldcode_KO_App.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
+				new HomeMenuItem {Id = MenuItemType.WebView, Title="Home" },
+				new HomeMenuItem {Id = MenuItemType.Menu, Title="Menu" },
                 new HomeMenuItem {Id = MenuItemType.About, Title="About" }
             };
 

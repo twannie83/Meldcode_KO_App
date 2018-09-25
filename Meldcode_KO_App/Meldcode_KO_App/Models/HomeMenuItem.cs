@@ -6,9 +6,9 @@ namespace Meldcode_KO_App.Models
 {
     public enum MenuItemType
     {
-        Browse,
+        Menu,
         About,
-		Item
+		WebView
     }
     public class HomeMenuItem
     {

@@ -17,7 +17,7 @@ namespace Meldcode_KO_App.Views
 
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Menu, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)
@@ -26,14 +26,14 @@ namespace Meldcode_KO_App.Views
             {
                 switch (id)
                 {
-                    case (int)MenuItemType.Browse:
+                    case (int)MenuItemType.Menu:
                         MenuPages.Add(id, new NavigationPage(new MenuPage()));
                         break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
-					case (int)MenuItemType.Item:
-						MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+					case (int)MenuItemType.WebView:
+						MenuPages.Add(id, new NavigationPage(new WebViewPage()));
 						break;
 				}
             }

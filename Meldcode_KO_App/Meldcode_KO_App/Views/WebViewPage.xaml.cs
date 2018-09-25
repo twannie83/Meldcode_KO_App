@@ -10,16 +10,27 @@ using Xamarin.Forms.Xaml;
 namespace Meldcode_KO_App.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class WebViewPage : ContentView
+	public partial class WebViewPage : ContentPage
 	{
-		public WebViewPage ()
+		public WebViewPage()
 		{
-			InitializeComponent ();
-		}
+			Label lbl_header = new Label
+			{
+				Text = "WebView",
+				HorizontalOptions = LayoutOptions.Center
+			};
+			WebView webview = new WebView
+			{
+				Source = "https://meldcodeko.wordpress.com/stappenplan-meldcode-kindermishandeling",
+				VerticalOptions = LayoutOptions.FillAndExpand
+			};
+			this.Content = new StackLayout
+			{
+				Children = {
+					 webview
+				}
+			};
 
-		public static implicit operator Page(WebViewPage v)
-		{
-			throw new NotImplementedException();
 		}
 	}
 }

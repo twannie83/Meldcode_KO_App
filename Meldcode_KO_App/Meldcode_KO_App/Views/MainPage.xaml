@@ -16,8 +16,13 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:AboutPage/>
+                <views:WebViewPage/>
             </x:Arguments>
         </NavigationPage>
+       
     </MasterDetailPage.Detail>
+    
+    
+    
+
 </MasterDetailPage>
