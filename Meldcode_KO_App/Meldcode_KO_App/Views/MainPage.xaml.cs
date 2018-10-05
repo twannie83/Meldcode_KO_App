@@ -15,9 +15,22 @@ namespace Meldcode_KO_App.Views
         {
             InitializeComponent();
 
-            MasterBehavior = MasterBehavior.Popover;
+			//Add About Button to toolbar
+			var settings = new ToolbarItem
+			{
+				Text = "Over",
+				Command = new Command(this.pageToAbout),
+
+			};
+
+			this.ToolbarItems.Add(settings);
+
+
+			MasterBehavior = MasterBehavior.Popover;
 
             MenuPages.Add((int)MenuItemType.Menu, (NavigationPage)Detail);
+
+
         }
 
         public async Task NavigateFromMenu(int id)
@@ -32,9 +45,6 @@ namespace Meldcode_KO_App.Views
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
-					case (int)MenuItemType.WebView:
-						MenuPages.Add(id, new NavigationPage(new WebViewPage()));
-						break;
 				}
             }
 
@@ -50,5 +60,19 @@ namespace Meldcode_KO_App.Views
                 IsPresented = false;
             }
         }
-    }
+		void pageToAbout()
+		{
+			App.Current.MainPage = new AboutPage();
+		}
+
+		public class PageManager
+		{
+			public static NavigationPage Init()
+			{
+				NavigationPage nav = new NavigationPage(new MainPage());
+				return nav;
+			}
+		}
+
+	}
 }

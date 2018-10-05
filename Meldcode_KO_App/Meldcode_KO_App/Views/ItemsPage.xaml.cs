@@ -31,7 +31,7 @@ namespace Meldcode_KO_App.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            App.Current.MainPage = new MainPage(); 
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
@@ -39,8 +39,8 @@ namespace Meldcode_KO_App.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
-        }
+			App.Current.MainPage = new AboutPage();
+		}
 
         protected override void OnAppearing()
         {
@@ -49,5 +49,13 @@ namespace Meldcode_KO_App.Views
             if (viewModel.Items.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
         }
-    }
+		public class PageManager
+		{
+			public static NavigationPage Init()
+			{
+				NavigationPage nav = new NavigationPage(new ItemsPage());
+				return nav;
+			}
+		}
+	}
 }

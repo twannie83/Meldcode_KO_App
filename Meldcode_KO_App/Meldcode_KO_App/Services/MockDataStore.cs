@@ -15,11 +15,11 @@ namespace Meldcode_KO_App.Services
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Stappenplan 1", Description="Noodsituatie" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Stappenplan 2", Description="Huiselijk Geweld" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Stappenplan 3", Description="Vermoeden van zedelijk misbruik door medewerker" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Stappenplan 4", Description="Sexueel misbruik kinderen onderling" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Stappenplan 5", Description="Informatie" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Noodsituatie", Description="" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Huiselijk Geweld", Description="" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Vermoeden van zedelijk misbruik door medewerker", Description="" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Sexueel misbruik kinderen onderling", Description="" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Informatie", Description="" },
             };
 
             foreach (var item in mockItems)

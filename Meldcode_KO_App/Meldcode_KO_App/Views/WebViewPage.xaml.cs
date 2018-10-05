@@ -21,7 +21,7 @@ namespace Meldcode_KO_App.Views
 			};
 			WebView webview = new WebView
 			{
-				Source = "https://meldcodeko.wordpress.com/stappenplan-meldcode-kindermishandeling",
+				Source = "https://meldcodekmko.nl",
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
 			this.Content = new StackLayout
@@ -31,6 +31,14 @@ namespace Meldcode_KO_App.Views
 				}
 			};
 
+		}
+		public class PageManager
+		{
+			public static NavigationPage Init()
+			{
+				NavigationPage nav = new NavigationPage(new WebViewPage());
+				return nav;
+			}
 		}
 	}
 }

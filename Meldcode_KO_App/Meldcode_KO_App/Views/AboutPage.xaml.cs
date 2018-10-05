@@ -15,7 +15,16 @@ namespace Meldcode_KO_App.Views
 
 		private void goToWebViewPageHandler(object sender, EventArgs e)
 		{
-			App.Current.MainPage = new WebViewPage();
+			App.Current.MainPage = new MainPage();
+		}
+	}
+
+	public class PageManager
+	{
+		public static NavigationPage Init()
+		{
+			NavigationPage nav = new NavigationPage(new AboutPage());
+			return nav;
 		}
 	}
 }

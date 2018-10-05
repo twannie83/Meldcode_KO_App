@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meldcode_KO_App.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meldcode_KO_App.iOS", "Meldcode_KO_App\Meldcode_KO_App.iOS\Meldcode_KO_App.iOS.csproj", "{800BD600-3BBB-4330-A0FE-1D60840D850D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meldcode_KO_App", "Meldcode_KO_App\Meldcode_KO_App\Meldcode_KO_App.csproj", "{8E2E7EF2-B3AE-4DF5-92FE-546D4250AD63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meldcode_KO_App", "Meldcode_KO_App\Meldcode_KO_App\Meldcode_KO_App.csproj", "{8E2E7EF2-B3AE-4DF5-92FE-546D4250AD63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
