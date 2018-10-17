@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Casa Solutions</Authors>
+    <Company>Casa Solutions</Company>
+    <Product>Meldcode Kinderopvang</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />  
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.871581" />  
   </ItemGroup>
 
   <ItemGroup>
